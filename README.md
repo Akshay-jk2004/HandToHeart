@@ -115,44 +115,31 @@ Text Display: The translated text is displayed in a dedicated chatbox within the
     ```bash
     python manage.py runserver
     ```
-##Project Structure
-.
-├── final.py            # Python script for real-time hand gesture recognition
-├── keras_model.h5      # Pre-trained Keras model for gesture recognition
-├── smnist.h5           # Trained TensorFlow model for hand gestures
-├── manage.py           # Django project management script
-├── myproject/          # Django project directory
-│   ├── settings.py     # Django settings
-│   ├── urls.py         # URL declarations
-│   └── ...
-├── requirements.txt    # List of Python packages required for the project
-└── README.md           # This file
-
 
 
 ## Model Details
  Hand Gesture Recognition Model
 The hand gesture recognition model is a key component of this project. It uses a Convolutional Neural Network (CNN) to classify hand gestures into corresponding letters.
 
-#Model Architecture:
+## Model Architecture:
 
 Input Layer: Accepts 28x28 grayscale images of hand gestures.
 Convolutional Layers: Multiple layers to extract features from the images.
 Pooling Layers: Reduces the spatial dimensions of the extracted features.
 Fully Connected Layers: For classification of the gestures into corresponding letters.
 Output Layer: Uses a softmax activation function to output probabilities for each letter.
-#Training Data:
+# Training Data:
 
 The model was trained on the Sign Language MNIST dataset, which contains images of hand gestures representing different letters of the alphabet.
-#Model File:
+# Model File:
 
 The trained model is saved as smnist.h5.
 Gesture Detection Process
-#Hand Detection:
+# Hand Detection:
 
 The system uses MediaPipe to detect hands in real-time from the video feed.
 Hand landmarks are identified to track the position and movements of the hands.
-#Image Preprocessing:
+# Image Preprocessing:
 
 The detected hand region is converted to grayscale and resized to 28x28 pixels to match the input size expected by the model.
 #Prediction:
@@ -162,7 +149,7 @@ The model outputs probabilities for each letter, and the top predictions are dis
 Code Overview
 The script final.py contains the code for real-time hand gesture detection and recognition.
 
-#Dependencies:
+# Dependencies:
 
 TensorFlow: For loading and using the trained model.
 OpenCV: For capturing video feed and preprocessing images.
@@ -175,7 +162,7 @@ cv2.VideoCapture(0): Captures video feed from the default camera.
 hands.process(framergb): Processes the video frames to detect hands.
 model.predict(pixeldata): Predicts the letter based on the preprocessed image of the hand gesture.
 
-##Models Training Screenshots
+## Models Training Screenshots
 
 In models training folder
 
