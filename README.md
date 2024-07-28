@@ -178,6 +178,9 @@ The labels for the model's classes are stored in the `labels.txt` file
 The model was trained using a dataset of sign language gestures, labeled according to the `labels.txt` file.
 The training process involved augmenting the dataset and using various techniques to improve accuracy and generalization.
 
+### Training video
+https://github.com/Akshay-jk2004/HandToHeart/issues/3#issue-2433975893
+
 
 ### Demo Link
 Uploaded in the repository
