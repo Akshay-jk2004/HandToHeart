@@ -163,8 +163,7 @@ hands.process(framergb): Processes the video frames to detect hands.
 model.predict(pixeldata): Predicts the letter based on the preprocessed image of the hand gesture.
 
 ## Models Training Screenshots
-
-In models training folder
+https://github.com/Akshay-jk2004/HandToHeart/issues/4#issue-2433976968
 
 
 ## Labels
