@@ -4,3 +4,5 @@ Keras
 Yolo 
 Numpy 
 Opencv
+mediapipeline
+h5py
