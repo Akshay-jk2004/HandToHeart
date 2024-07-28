@@ -62,7 +62,7 @@ our Video Conferencing Application designed to enable non-verbal individuals to 
 
 
 
-### InstallationPrerequisites:
+## InstallationPrerequisites:
 
 - Python 3.x
 
@@ -114,4 +114,17 @@ our Video Conferencing Application designed to enable non-verbal individuals to 
     python manage.py runserver
     ```
 
+## Model Details
+ **Model File**
+- Path: models/keras_model.h5
+- Format: Keras HDF5
+## Labels
+The labels for the model's classes are stored in the `labels.txt` file
+```
+0 Class 1
+1 Class 2
+```
 
+## Training
+The model was trained using a dataset of sign language gestures, labeled according to the `labels.txt` file.
+The training process involved augmenting the dataset and using various techniques to improve accuracy and generalization.
