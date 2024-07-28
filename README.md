@@ -91,8 +91,8 @@ Text Display: The translated text is displayed in a dedicated chatbox within the
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/projectname.git
-    cd projectname
+    git clone https://github.com/Akshay-jk2004/HandToHeart.git
+    cd HandToHeart
     ```
 
 2. **Create a virtual environment**:
@@ -115,11 +115,71 @@ Text Display: The translated text is displayed in a dedicated chatbox within the
     ```bash
     python manage.py runserver
     ```
+##Project Structure
+.
+├── final.py            # Python script for real-time hand gesture recognition
+├── keras_model.h5      # Pre-trained Keras model for gesture recognition
+├── smnist.h5           # Trained TensorFlow model for hand gestures
+├── manage.py           # Django project management script
+├── myproject/          # Django project directory
+│   ├── settings.py     # Django settings
+│   ├── urls.py         # URL declarations
+│   └── ...
+├── requirements.txt    # List of Python packages required for the project
+└── README.md           # This file
+
+
 
 ## Model Details
- **Model File**
-- Path: models/keras_model.h5
-- Format: Keras HDF5
+ Hand Gesture Recognition Model
+The hand gesture recognition model is a key component of this project. It uses a Convolutional Neural Network (CNN) to classify hand gestures into corresponding letters.
+
+#Model Architecture:
+
+Input Layer: Accepts 28x28 grayscale images of hand gestures.
+Convolutional Layers: Multiple layers to extract features from the images.
+Pooling Layers: Reduces the spatial dimensions of the extracted features.
+Fully Connected Layers: For classification of the gestures into corresponding letters.
+Output Layer: Uses a softmax activation function to output probabilities for each letter.
+#Training Data:
+
+The model was trained on the Sign Language MNIST dataset, which contains images of hand gestures representing different letters of the alphabet.
+#Model File:
+
+The trained model is saved as smnist.h5.
+Gesture Detection Process
+#Hand Detection:
+
+The system uses MediaPipe to detect hands in real-time from the video feed.
+Hand landmarks are identified to track the position and movements of the hands.
+#Image Preprocessing:
+
+The detected hand region is converted to grayscale and resized to 28x28 pixels to match the input size expected by the model.
+#Prediction:
+
+The preprocessed image is fed into the CNN model.
+The model outputs probabilities for each letter, and the top predictions are displayed with their confidence levels.
+Code Overview
+The script final.py contains the code for real-time hand gesture detection and recognition.
+
+#Dependencies:
+
+TensorFlow: For loading and using the trained model.
+OpenCV: For capturing video feed and preprocessing images.
+MediaPipe: For hand detection and landmark identification.
+Pandas and NumPy: For data manipulation and numerical operations.
+#Key Functions:
+
+load_model('smnist.h5'): Loads the trained hand gesture recognition model.
+cv2.VideoCapture(0): Captures video feed from the default camera.
+hands.process(framergb): Processes the video frames to detect hands.
+model.predict(pixeldata): Predicts the letter based on the preprocessed image of the hand gesture.
+
+##Models Training Screenshots
+
+In models training folder
+
+
 ## Labels
 The labels for the model's classes are stored in the `labels.txt` file
 ```
