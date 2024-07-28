@@ -1,12 +1,14 @@
 ## INTRODUCTION
+### Problem Statement
+In traditional video conferencing applications, mute individuals face significant communication barriers. They are unable to participate fully in meetings because their primary mode of communication—sign language—is not understood by most participants. This lack of accessibility leads to exclusion and hampers effective collaboration and communication.
 
+### Project Description
+Our Video Conferencing Application aims to solve this problem by translating real-time sign language into text. This allows mute individuals to actively participate in meetings and ensures their contributions are understood by all attendees.
 
-
-
-
-
-
-our Video Conferencing Application designed to enable non-verbal individuals to participate in meetings. This application translates real-time sign language into text, making communication seamless and inclusive
+### How It Works
+Real-Time Video Input: During a video call, the application captures the sign language gestures of the mute participant.
+Translation: our models process the video input to recognize and translate sign language into corresponding text.
+Text Display: The translated text is displayed in a dedicated chatbox within the video conferencing interface, allowing other participants to read and respond in real-time.
 
 
  ## Features:
@@ -128,3 +130,4 @@ The labels for the model's classes are stored in the `labels.txt` file
 ## Training
 The model was trained using a dataset of sign language gestures, labeled according to the `labels.txt` file.
 The training process involved augmenting the dataset and using various techniques to improve accuracy and generalization.
+
