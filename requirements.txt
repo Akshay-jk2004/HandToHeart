@@ -1,0 +1,6 @@
+Ultralytics 
+Tensorflow 
+Keras 
+Yolo 
+Numpy 
+Opencv
