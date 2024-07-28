@@ -131,31 +131,31 @@ Output Layer: Uses a softmax activation function to output probabilities for eac
 # Training Data:
 
 The model was trained on the Sign Language MNIST dataset, which contains images of hand gestures representing different letters of the alphabet.
-# Model File:
+### Model File:
 
 The trained model is saved as smnist.h5.
 Gesture Detection Process
-# Hand Detection:
+### Hand Detection:
 
 The system uses MediaPipe to detect hands in real-time from the video feed.
 Hand landmarks are identified to track the position and movements of the hands.
-# Image Preprocessing:
+### Image Preprocessing:
 
 The detected hand region is converted to grayscale and resized to 28x28 pixels to match the input size expected by the model.
-#Prediction:
+### Prediction:
 
 The preprocessed image is fed into the CNN model.
 The model outputs probabilities for each letter, and the top predictions are displayed with their confidence levels.
 Code Overview
 The script final.py contains the code for real-time hand gesture detection and recognition.
 
-# Dependencies:
+### Dependencies:
 
 TensorFlow: For loading and using the trained model.
 OpenCV: For capturing video feed and preprocessing images.
 MediaPipe: For hand detection and landmark identification.
 Pandas and NumPy: For data manipulation and numerical operations.
-#Key Functions:
+### Key Functions:
 
 load_model('smnist.h5'): Loads the trained hand gesture recognition model.
 cv2.VideoCapture(0): Captures video feed from the default camera.
