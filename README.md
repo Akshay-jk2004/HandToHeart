@@ -184,3 +184,11 @@ https://github.com/Akshay-jk2004/HandToHeart/issues/3#issue-2433975893
 ### Demo Link
 Uploaded in the repository
 https://github.com/Akshay-jk2004/HandToHeart/issues/2#issue-2433969752
+
+## credits
+
+zegoclouds
+
+
+
+https://towardsdatascience.com/sign-language-recognition-with-advanced-computer-vision-7b74f20f3442
