@@ -181,5 +181,4 @@ The training process involved augmenting the dataset and using various technique
 
 ### Demo Link
 Uploaded in the repository
-https://github.com/Akshay-jk2004/HandToHeart/blob/main/Project%20Demo%20Server%20side.mp4
-
+https://github.com/Akshay-jk2004/HandToHeart/issues/2#issue-2433969752
